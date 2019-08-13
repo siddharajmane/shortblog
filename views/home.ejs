@@ -36,7 +36,7 @@
 
                 <div class="card mb-3" style="width: 100%;">
           <div class="card-body">
-            <h2 class="card-title"><%=item.posttitle%></h2>
+            <a href="/posts/<%=item.posttitle%>"><h2 class="card-title"><%=item.posttitle%></h2></a>
             <h6>Author: <%=item.postby%></h6>
             <h6><%=item.postdate%></h6>
             <p class="card-text"><%=item.postbody.substr(0,100)+" ..."%><a href="/posts/<%=item.posttitle%>"> Read More</a></p>
