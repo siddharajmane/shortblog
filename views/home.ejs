@@ -29,22 +29,24 @@
         <p><%=item.postdate%></p>
       <%});%>
       </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="container">
+              <% postlist.forEach(function(item){%>
 
-      <% postlist.forEach(function(item){%>
-      <div class="container">
-        <div class="card mb-3" style="width: 100%;">
-  <div class="card-body">
-    <h2 class="card-title"><%=item.posttitle%></h2>
-    <h6>Author: <%=item.postby%></h6>
-    <h6><%=item.postdate%></h6>
-    <p class="card-text"><%=item.postbody.substr(0,100)+" ..."%><a href="/posts/<%=item.posttitle%>"> Read More</a></p>
-      </div>
-    </div>
-     <%})%>
-
-
-
+                <div class="card mb-3" style="width: 100%;">
+          <div class="card-body">
+            <h2 class="card-title"><%=item.posttitle%></h2>
+            <h6>Author: <%=item.postby%></h6>
+            <h6><%=item.postdate%></h6>
+            <p class="card-text"><%=item.postbody.substr(0,100)+" ..."%><a href="/posts/<%=item.posttitle%>"> Read More</a></p>
+              </div>
           </div>
+             <%})%>
+        </div>
+        </div>
+      </div>
+
         <footer id="sticky-footer" class="navbar-dark bg-dark footer fixed-bottom footer-dark">
           <div class="container foot">
             <h6>Created with ❤️ by Siddharaj Mane</h6>
